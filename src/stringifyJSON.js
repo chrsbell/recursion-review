@@ -4,5 +4,17 @@
 // but you don't so you're going to write it from scratch:
 
 var stringifyJSON = function(obj) {
-  // your code goes here
+  if (obj === null) {
+    return "null";
+  }
+  if (obj === false) {
+    return "false";
+  }
+  if (obj === 0) {
+    return "0";
+  }
+  // Make array into string
+  // Make object into string
+  //`${key}: ${obj[key]}` recursively
+
 };
